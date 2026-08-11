@@ -2,7 +2,7 @@
   "mcpServers": {
     "mock-calendar": {
       "command": "python3",
-      "args": ["tools/mock-calendar-mcp/server.py"]
+      "args": ["../../tools/mock-calendar-mcp/server.py"]
     }
   }
 }

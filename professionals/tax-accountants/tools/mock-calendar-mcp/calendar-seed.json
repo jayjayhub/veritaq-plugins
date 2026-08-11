@@ -1,0 +1,74 @@
+{
+  "calendars": [
+    {
+      "id": "primary",
+      "summary": "Personal",
+      "primary": true
+    },
+    {
+      "id": "tax-deadlines@group.calendar.mock",
+      "summary": "Tax Deadlines",
+      "primary": false
+    }
+  ],
+  "events": [
+    {
+      "id": "evt_manual000001",
+      "calendarId": "tax-deadlines@group.calendar.mock",
+      "summary": "Hong Seng Motor · Form C due",
+      "startTime": "2026-08-31",
+      "endTime": "2026-08-31",
+      "allDay": true,
+      "description": "Added by hand before the plugin was installed. TEST FIXTURE: the deadline skill must never modify or delete this event, because it carries no reconciliation marker. If a sync touches it, invariant 6 is broken.",
+      "availability": "AVAILABILITY_FREE",
+      "visibility": "private"
+    },
+    {
+      "id": "evt_seeded000002",
+      "calendarId": "tax-deadlines@group.calendar.mock",
+      "summary": "Lim Trading Sdn Bhd · Form C due",
+      "startTime": "2026-08-31",
+      "endTime": "2026-08-31",
+      "allDay": true,
+      "colorId": "11",
+      "description": "Form C, YA2025. Manual filing date 31 Jul 2026.\n\ntab-deadline:lim-trading-sdn-bhd:form-c:2025:statutory",
+      "availability": "AVAILABILITY_FREE",
+      "visibility": "private"
+    },
+    {
+      "id": "evt_seeded000003",
+      "calendarId": "tax-deadlines@group.calendar.mock",
+      "summary": "Lim Trading Sdn Bhd · Documents needed by",
+      "startTime": "2026-07-20",
+      "endTime": "2026-07-20",
+      "allDay": true,
+      "colorId": "6",
+      "description": "Internal cut-off, 6 weeks before the filing deadline.\n\ntab-deadline:lim-trading-sdn-bhd:form-c:2025:cutoff",
+      "availability": "AVAILABILITY_FREE",
+      "visibility": "private"
+    },
+    {
+      "id": "evt_seeded000004",
+      "calendarId": "tax-deadlines@group.calendar.mock",
+      "summary": "Tan Ah Kow · Chase documents",
+      "startTime": "2026-08-10",
+      "endTime": "2026-08-10",
+      "allDay": true,
+      "colorId": "8",
+      "description": "Weekly chase while documents outstanding.\n\ntab-deadline:tan-ah-kow:form-be:2025:chase",
+      "availability": "AVAILABILITY_FREE",
+      "visibility": "private",
+      "recurrenceData": ["RRULE:FREQ=WEEKLY;COUNT=6"]
+    },
+    {
+      "id": "evt_personal00005",
+      "calendarId": "primary",
+      "summary": "Dentist",
+      "startTime": "2026-08-14T10:00:00Z",
+      "endTime": "2026-08-14T11:00:00Z",
+      "allDay": false,
+      "description": "On the primary calendar. Nothing in this plugin should ever write here.",
+      "availability": "AVAILABILITY_BUSY"
+    }
+  ]
+}

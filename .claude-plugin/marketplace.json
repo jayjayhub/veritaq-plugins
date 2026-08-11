@@ -1,0 +1,17 @@
+{
+  "name": "veritaq",
+  "owner": {
+    "name": "Veritaq",
+    "email": "dev@veritaq.net"
+  },
+  "plugins": [
+    {
+      "name": "tax-accountant-in-a-box",
+      "source": "./professionals/tax-accountants/plugins/tax-accountant-in-a-box",
+      "description": "Runs a small tax practice end to end: onboards clients, plans engagements, chases missing documents, extracts figures from source documents into workpapers, and keeps filing deadlines in a calendar. Ships configured for Malaysia; the jurisdiction pack is swappable.",
+      "version": "1.0.0",
+      "category": "professional-services",
+      "keywords": ["tax", "accounting", "practice-management", "malaysia"]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Reserved for company-specific plugins, e.g. companies/<COMPANY>/plugins/<plugin-name>/
+
+Same layout rule as professionals/: the directory named in marketplace.json
+"source" must be the one containing .claude-plugin/plugin.json.

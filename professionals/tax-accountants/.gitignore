@@ -1,0 +1,38 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# LibreOffice / Office lock and temp files
+.~lock.*#
+~$*
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Node
+node_modules/
+package-lock.json
+
+# --- Testbed runtime state ---
+# Fixtures are committed. Anything a test RUN produces is not, so every run
+# starts from a known state. Reset with: tools/reset-testbed.sh
+
+# Mock calendar working store (seed is committed as calendar-seed.json)
+tools/mock-calendar-mcp/calendar-store.json
+
+# Workpapers and deliverables generated during a run
+testbed/**/03-Workpapers/*.xlsx
+testbed/**/03-Workpapers/*.csv
+testbed/**/04-Deliverables/*
+!testbed/**/.keep.md
+
+# Engagement plans and client CLAUDE.md files generated during a run
+# (Lim Trading's are committed as fixtures; new ones are not)
+testbed/Seri-Maju-Enterprise-YA2026/CLAUDE.md
+testbed/Seri-Maju-Enterprise-YA2026/0*/
+testbed/**/05-Engagement-Admin/engagement-plan.md
+!testbed/Lim-Trading-Sdn-Bhd-YA2025/05-Engagement-Admin/engagement-plan.md
